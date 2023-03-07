@@ -6,10 +6,8 @@ local wehavechisels =  minetest.get_modpath("mychisel")
 --Bannerstones
 --------------
 
-local groups = {cracky = 3, oddly_breakable_by_hand = 2, stone = 1}
-if not minetest.is_creative_enabled() then
-	groups["not_in_creative_inventory"] = 1
-end
+local groups = {cracky = 3, oddly_breakable_by_hand = 2, stone = 1, not_in_creative_inventory = 1}
+
 
 
 --Node will be called facade:<subname>_bannerstone
